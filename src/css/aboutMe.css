@@ -1,0 +1,95 @@
+.Wrapper {
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 60vh auto;
+    height: 90vh;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    background: url('../img/banner.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #a2b9bc;
+    background-position-x: 50%;
+    background-position-y: 30%;
+}
+
+.about{
+    margin:0 10% 0 10%;
+    display: grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+}
+
+#card, #card2, #card3{
+    background: rgb(66, 81, 102);
+    height: inherit;
+    margin: 15px 10px;
+    padding: 15px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 20px;
+   border-radius: 10px;
+   border-color: black;
+   border-style: solid;
+   border-width: 1px;
+}
+
+#card  h3, #card2 h3, #card3 h3{
+    list-style: none;
+    letter-spacing: .2em;
+    font-weight: bold;
+   text-decoration: underline;
+   text-align: center;
+   text-transform: uppercase;
+} 
+
+#card #call, #card2 #call, #card3 #call {
+    margin:0px;
+    padding: 0px;
+    display: block;
+}
+
+#card #return, #card2 #return, #card3 #return{
+   padding-left: 10px;
+}
+
+#card2 {
+    color: black;
+    background-color: #a2b9bc;
+}
+
+#card {
+    background-color: #6b5b95;
+    color: white; 
+}
+
+#card3 {
+    color: white;
+    background-color: #b2ad7f;
+}
+
+#call, #return{
+    letter-spacing: .1em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@media screen and (max-width:380px){
+    .Wrapper{
+      display: grid;
+      grid-template-rows: 40% auto;
+    }
+
+    .banner{
+        width: 100vw;
+    }
+
+    .about{
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+}

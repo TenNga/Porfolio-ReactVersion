@@ -1,0 +1,82 @@
+body{
+    background-color: #6b5b95;
+}
+
+.container-body{
+    margin:auto 20%;
+}
+
+.arts{
+    margin: 30vh auto;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aboutArt{
+    width: auto;
+    height: 20vh;
+    background-image: url(../img/designArt.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-color: #b2ad7f;
+}
+
+.backAbout{
+    background-color: #b2ad7f;
+}
+
+.backResume{
+    background-color: #a2b9bc;
+}
+
+.backProject{
+    background-color: #878f99;
+}
+
+.backAbout, .backResume, .backProject{
+    padding: 70px 0px;
+    color: #6b5b95;
+    font-size: 70px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    font-weight: bolder;
+    letter-spacing: .08em;
+
+    text-transform: uppercase;
+}
+
+.resumeArt{
+    width: auto;
+    height: 20vh;
+    background: url(../img/aboutArt.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-color: #a2b9bc;
+}
+.projectArt{
+    width: auto;
+    height: 20vh;
+    background: url(../img/resultArt.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-color: #878f99;
+}
+
+.backAbout:hover, .backResume:hover, .backProject:hover{
+    opacity: 1;
+}
+@media screen and (max-width:380px){
+    .arts{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 70px auto;
+    }
+   
+}
