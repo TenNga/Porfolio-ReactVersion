@@ -2,10 +2,10 @@ import React from 'react';
 import '../css/resume.css';
 
 const Resume = () => {
-  
+
     return (
         <div className="container-resume">
-        
+
             <h3>Resume</h3>
             <div className="education">
                 <div className="Edu_description">
@@ -26,17 +26,19 @@ const Resume = () => {
                     </ul>
                 </div>
                 <div className="skillButton">
-                    <span>java</span>
-                    <span>MySQL</span>
-                    <span>oodb</span>
-                    <span>git</span>
-                    <span>c++</span>
+                    <ul id="skills">
+                        <li>java</li>
+                        <li>MySQL</li>
+                        <li>oodb</li>
+                        <li>git</li>
+                        <li>c++</li>
+                    </ul>
                 </div>
             </div>
             <div className="Volunteers">
                 <h4>Volunteers</h4>
                 <div className="TNA_details">
-                 <hr />
+                    <hr />
                     <div className="TNA_description">
                         <h5>Tibetan Nurse Association<span id="year">2019 - Present</span></h5>
                         <h5>Tech advisor/web developer<span id="location">New York City, NY</span></h5>
@@ -50,11 +52,13 @@ const Resume = () => {
                         </ul>
                     </div>
                     <div className="skillButton">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JAVASCRIPT</span>
-                        <span>photoshop</span>
-                        <span>bootstrap</span>
+                        <ul id="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>photoshop</li>
+                            <li>bootstrap</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="TCV_details">
@@ -74,11 +78,13 @@ const Resume = () => {
                         </ul>
                     </div>
                     <div className="skillButton">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>premiere</span>
-                        <span>photoshop</span>
-                        <span>networking</span>
+                        <ul id="skills">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>premiere</li>
+                            <li>photoshop</li>
+                            <li>networking</li>
+                        </ul>
                     </div>
                 </div>
             </div>

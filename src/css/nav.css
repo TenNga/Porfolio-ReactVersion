@@ -13,7 +13,7 @@
 }
 
 .navBar {
-    width: 100%;
+    width: 100vw;
     padding: 15px;
     height: fit-content;
     display: grid;
@@ -38,16 +38,42 @@
     list-style-type: none;
     margin-right: 20px;
     display: inline;
+    font-size: 20px;
 }
 
 #item:hover {
     text-decoration: none;
     cursor: pointer;
     color: black;
+    text-shadow: 2px 2px 1px rgb(167, 166, 166);
+
 }
 
+.burgerIcon div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
 @media screen and (max-width:380px){
-    .navButtons{
-        display: none;
+    .navBar{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
     }
+    .h4{
+        font-size: 15px;
+    }
+    #item{
+        font-size: 13px;
+        outline: 1px blueviolet solid;
+        padding: 5px;
+        border-radius: 10%;
+        
+    }
+    #navList{
+        float: none;
+    }
+
 }

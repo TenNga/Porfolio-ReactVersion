@@ -39,8 +39,7 @@ class App extends React.Component {
                     <Nav getLink={this.setLink} />
                 </div>
                 <div className="contain">
-
-                    <div>{this.processClick(clickValue)}</div> 
+                    {this.processClick(clickValue)}
                 </div>
             </div>
 

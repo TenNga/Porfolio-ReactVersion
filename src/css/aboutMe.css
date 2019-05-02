@@ -1,4 +1,5 @@
 .Wrapper {
+    width: 100%;
     margin: 0px;
     padding: 0px;
     display: grid;
@@ -12,19 +13,21 @@
     background: url('../img/banner.png');
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: #a2b9bc;
+    background-color: #6b5b95;
     background-position-x: 50%;
     background-position-y: 30%;
 }
 
 .about{
-    margin:0 10% 0 10%;
+    background: #6b5b95;
+    width: 100%;
+    padding:0 10% 0 10%;
     display: grid;
     grid-template-columns:33.3% 33.3% 33.3%;
 }
 
 #card, #card2, #card3{
-    background: rgb(66, 81, 102);
+    
     height: inherit;
     margin: 15px 10px;
     padding: 15px;
@@ -34,6 +37,7 @@
    border-color: black;
    border-style: solid;
    border-width: 1px;
+   box-shadow: 10px 10px grey;;
 }
 
 #card  h3, #card2 h3, #card3 h3{
@@ -61,13 +65,15 @@
 }
 
 #card {
-    background-color: #6b5b95;
+    background-color: #403F3F;
     color: white; 
+    border-color: white;
 }
 
 #card3 {
     color: white;
     background-color: #b2ad7f;
+    border-color: white;
 }
 
 #call, #return{
@@ -79,7 +85,7 @@
 @media screen and (max-width:380px){
     .Wrapper{
       display: grid;
-      grid-template-rows: 40% auto;
+      grid-template-rows: 25% auto;
     }
 
     .banner{
@@ -87,9 +93,16 @@
     }
 
     .about{
-        margin: 5px;
         display: grid;
         grid-template-columns: 100%;
+        padding: 0 0;
+    }
+    h3{
+        font-size: 17px;
+    }
+    #card, #card2, #card3{
+        margin-right: 15px;
+        font-size: 12px;
     }
 
 }

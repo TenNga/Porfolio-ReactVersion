@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.ProjectWrapper{
+    width: 100%;
+    padding: 5% 20%;
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.projectList{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#projectCard{
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: grey;
+    width: 100%;
+    height: 250px;
+    transition: 1s;
+}
+#innerCard{
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.ReactImgVid{
+    background-image: url(../img/imageSearchSS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.TopDownload{
+    background-image: url(../img/TopDownloadAppSS.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.TipCalculator{
+    background-image: url(../img/tipCalc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.listManager{
+    background-image: url(../img/tipCalc.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.DatabaseNBA{
+    background-image: url(../img/databaseProject.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soccerLogo{
+    background-image: url(../img/TEAMTIBETNY.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#projectCard:hover{
+    background-color: rgb(41, 13, 68);
+    background-image: none;
+}
+
+#innerCard:hover{
+    color: white;
+    opacity: 1;
+}
+
+#gitHub{
+    background-color: skyblue;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media screen and (max-width:380px){
+    .ProjectWrapper{
+        padding: 0px 20px;
+    }
+
+    .projectList{
+        margin-bottom: 10px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .heading h5{
+        font-size: 15px;
+    }
+}
